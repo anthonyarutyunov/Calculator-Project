@@ -5,8 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator App</title>
+    <link rel="stylesheet" href="assets/css/stylesheet.css">
 </head>
 <body>
-    
+    <div class="calculator" id="calc">
+        <div class="screen">
+            <input type="text" class="output" id="output" value="" disabled />
+        </div>
+        <div class="keypad">
+            <!-- Main Buttons (keypad-ordered = CSS grid) -->
+            <div class="keypad-ordered">
+                <button class="main-bt" id="bt">7</button>
+                <button class="main-bt" id="bt">8</button>
+                <button class="main-bt" id="bt">9</button>
+                <button class="action-bt" id="bt" data-action="divide">&#247;</button>
+                <button class="main-bt" id="bt">4</button>
+                <button class="main-bt" id="bt">5</button>
+                <button class="main-bt" id="bt">6</button>
+                <button class="action-bt" id="bt" data-action="multiply">&#215;</button>
+                <button class="main-bt" id="bt">1</button>
+                <button class="main-bt" id="bt">2</button>
+                <button class="main-bt" id="bt">3</button>
+                <button class="action-bt" id="bt" data-action="subtract">&#45;</button>
+                <button class="extra-bt" id="bt">0</button>
+                <button class="extra-bt" id="bt" data-action="decimal">.</button>
+                <button class="clear-bt" id="bt" data-action="clear">C</button>
+                <button class="action-bt" id="bt" data-action="add">&#43;</button>
+            </div>
+            <div class="alignment-0001" style="padding: 5px;">
+                <button class="equals-bt" id="bt" data-action="compute">&#61;</button>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/app.js"></script>
 </body>
 </html>
